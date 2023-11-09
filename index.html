@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM Online-shop</title>
+</head>
+
+<body>
+  <h1>Добавить товар</h1>
+
+  <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <fieldset>
+      <label>
+        <p>Наименование</p>
+        <input type="text" name="name" required>
+      </label>
+
+      <p>Категория</p>
+      <select name="Category" required>
+        <option value="Артефакт" label="Артефакт"></option>
+        <option value="" label=""></option>
+        <option value="" label=""></option>
+        <option value="" label=""></option>
+      </select>
+
+      <p>Единицы измерения</p>
+      <select name="units" required>
+        <option value="шт" label="шт"></option>
+        <option value="" label=""></option>
+        <option value="" label=""></option>
+        <option value="" label=""></option>
+      </select>
+
+      <label>
+        <p>Дисконт</p>
+        <input type="checkbox">
+        <input type="number" disabled>
+      </label>
+
+      <label>
+        <p>Описание</p>
+        <textarea name="description" cols="25" rows="3" required>
+        </textarea>
+      </label>
+
+      <label>
+        <p>Количество</p>
+        <input type="number" name="count" required>
+      </label>
+
+      <label>
+        <p>Цена</p>
+        <input type="number" name="price" required>
+      </label>
+
+      <br>
+      <input type="file" name="image" required>
+    </fieldset>
+
+      <br>
+      <input type="submit" value="Добавить товар">
+  </form>
+
+</body>
+</html>
